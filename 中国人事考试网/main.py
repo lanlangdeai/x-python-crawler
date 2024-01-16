@@ -1,5 +1,5 @@
 import requests
-
+from fake_useragent import UserAgent
 
 def search_page():
 
@@ -26,12 +26,24 @@ Accept-Language: zh-CN,zh;q=0.9
 Cookie: acw_tc=7ae1d14d17053653123535101ef8b9630d9876bb548fcb0679c46b4c6b; Hm_lvt_779e393db65c6343f5f6c8ac6b0ff458=1705365312; Hm_lpvt_779e393db65c6343f5f6c8ac6b0ff458=1705365436
 
     '''
+    ua = UserAgent()
+    # ua.chrome
+    # ua.ie
+    # ua.edge
+    # ua.safari
+    # ua.firefox
+
+    # 随机生成
+    # ua.random
+
+
+
+
     # 需要添加UA
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+        # 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 SE 2.X MetaSr 1.0'
+        'User-Agent': ua.random
     }
-
-
     resp = requests.post(url, data=data, headers=headers)
     resp.encoding = 'utf-8'
     with open('cpta.html', 'w', encoding='utf-8') as fp:

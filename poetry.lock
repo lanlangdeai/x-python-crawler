@@ -121,6 +121,22 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 reference = "ali"
 
 [[package]]
+name = "fake-useragent"
+version = "1.4.0"
+description = "Up-to-date simple useragent faker with real world database"
+optional = false
+python-versions = "*"
+files = [
+    {file = "fake-useragent-1.4.0.tar.gz", hash = "sha256:5426e4015d8ccc5bb25f64d3dfcfd3915eba30ffebd31b86b60dc7a4c5d65528"},
+    {file = "fake_useragent-1.4.0-py3-none-any.whl", hash = "sha256:9acce439ee2c6cf9c3772fa6c200f62dc8d56605063327a4d8c5d0e47f414b85"},
+]
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "ali"
+
+[[package]]
 name = "idna"
 version = "3.6"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -186,4 +202,4 @@ reference = "ali"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ffb0f58f8b4ccbdf27f5b8a0d2b1114f536d4ca4c6ae50594f93c2b2585a3839"
+content-hash = "45bcbdfe663bdfed84a54aeb890916b90438c66a5d70f44185d0253e54d0e0fe"
